@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Apartman Anja - Informacije za goste</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            background-color: #f9f9f9;
+            color: #333;
+        }
+        header {
+            background-color: #2c3e50;
+            color: white;
+            text-align: center;
+            padding: 2rem 1rem;
+        }
+        h1 { margin: 0 0 1rem 0; }
+        .lang-selector {
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+            flex-wrap: wrap;
+            margin-top: 15px;
+        }
+        .lang-link {
+            display: inline-block;
+            transition: transform 0.2s;
+        }
+        .lang-link:hover {
+            transform: scale(1.1);
+        }
+        .flag-icon {
+            width: 50px; /* Big flags */
+            height: auto;
+            border-radius: 4px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.3);
+        }
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 1rem;
+        }
+        section {
+            background: white;
+            margin-bottom: 1.5rem;
+            padding: 1.5rem;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+        h2 { color: #2c3e50; border-bottom: 2px solid #ecf0f1; padding-bottom: 0.5rem; }
+        img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 4px;
+            margin: 1rem 0;
+            border: 1px solid #ddd;
+        }
+        .contact-highlight {
+            background-color: #e8f4f8;
+            padding: 1rem;
+            border-left: 4px solid #3498db;
+            margin: 1rem 0;
+        }
+        .important { font-weight: bold; color: #e74c3c; }
+        ul, ol { margin-top: 0; }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Apartman Anja</h1>
+        <!-- Language Selection Flags -->
+        <div class="lang-selector">
+            <a href="index.html" class="lang-link"><img src="flag-en.png" alt="Engleski" class="flag-icon"></a>
+            <a href="index-de.html" class="lang-link"><img src="flag-de.png" alt="Njemački" class="flag-icon"></a>
+            <a href="index-it.html" class="lang-link"><img src="flag-it.png" alt="Talijanski" class="flag-icon"></a>
+            <a href="index-hr.html" class="lang-link"><img src="flag-hr.png" alt="Hrvatski" class="flag-icon"></a>
+            <a href="index-si.html" class="lang-link"><img src="flag-pl.png" alt="Poljski" class="flag-icon"></a>
+            <a href="index-cz.html" class="lang-link"><img src="flag-cz.png" alt="Češki" class="flag-icon"></a>
+            <a href="index-hu.html" class="lang-link"><img src="flag_hu.png" alt="Mađarski" class="flag-icon"></a>
+        </div>
+    </header>
+
+    <div class="container">
+        
+        <!-- House Rules -->
+        <section id="house-rules">
+            <h2>Kućni red</h2>
+            <p>Dobrodošli! Nadamo se da uživate u boravku u Apartmanu Anja. Molimo vas da poštujete standardno vrijeme prijave i odjave.</p>
+            <ul>
+                <li><strong>Prijava:</strong> od 14:00</li>
+                <li><strong>Odjava:</strong> do 10:00</li>
+            </ul>
+        </section>
+
+        <!-- Documents -->
+        <section id="documents">
+            <h2>Prijava gostiju (dokumenti)</h2>
+            <p>Po zakonu smo dužni prijaviti sve goste. Možete nam poslati jasne fotografije dokumenata ILI jednostavno napisati sljedeće podatke za svakog gosta:</p>
+            <ul>
+                <li>Puno ime i prezime</li>
+                <li>Datum rođenja</li>
+                <li>Mjesto rođenja</li>
+                <li>Vrsta dokumenta (osobna iskaznica, putovnica, vozačka dozvola)</li>
+                <li>Broj dokumenta</li>
+            </ul>
+            <div class="contact-highlight">
+                <p>Molimo pošaljite ove informacije porukom na 
+                  <a href="https://www.facebook.com/janja.keglevic.3">Janja Keglević</a> 
+                  putem Facebooka ili Vibera na: <strong>+385 95 858 2031</strong>.
+                </p>
+            </div>
+        </section>
+
+        <!-- How to Get There -->
+        <section id="directions">
+            <h2>Kako doći</h2>
+            <p><strong>Adresa:</strong> Fratrici 64e</p>
+            <p>Koristite interaktivnu kartu ispod kako biste pronašli apartman.</p>
+            
+            <div class="map-container">
+                <iframe
+                    src="https://maps.google.com/maps?q=45.46136,13.5429503&z=17&output=embed"
+                    width="100%"
+                    height="400"
+                    style="border:0;"
+                    allowfullscreen=""
+                    loading="lazy">
+                </iframe>
+            </div>
+            <img src="howtogetthere.png" alt="Upute za dolazak na karti">
+        </section>
+
+        <!-- Parking -->
+        <section id="parking">
+            <h2>Parking</h2>
+            <p>Gosti mogu sigurno parkirati vozila na označenom području prikazanom na slici ispod.</p>
+            <img src="apartmentinfo.jpg" alt="Označeno parkirno mjesto">
+        </section>
+
+        <!-- Terrace -->
+        <section id="terrace">
+            <h2>Vaša terasa</h2>
+            <p>Prostor prikazan ispod je vaš dio terase. Slobodno se opustite i uživajte!</p>
+            <img src="hallwayDoorandTerrace.png" alt="Prostor terase za goste">
+        </section>
+
+        <!-- Entrance Door -->
+        <section id="entrance">
+            <h2>Ulazna vrata</h2>
+            <p>Za ulazak u Apartman Anja, ulazna vrata nalaze se na <strong>desnoj strani</strong> hodnika.</p>
+            <img src="entranceDoor.png" alt="Ulazna vrata apartmana">
+        </section>
+
+        <!-- Keys -->
+        <section id="keys">
+            <h2>Ključevi apartmana</h2>
+            <p>Naš sustav ključeva je vrlo jednostavan: ključevi će vas čekati u vratima po vašem dolasku.</p>
+            <img src="keys.png" alt="Ključevi u vratima">
+        </section>
+
+        <!-- Air Conditioning -->
+        <section id="ac">
+            <h2>Klimatizacija</h2>
+            <p>Za korištenje klima uređaja za hlađenje, provjerite da je na daljinskom prikazana <strong>ikona snježne pahulje</strong>.</p>
+            <img src="acRemote.png" alt="Daljinski upravljač klima uređaja sa snježnom pahuljom">
+        </section>
+
+        <!-- TV Remotes -->
+        <section id="tv">
+            <h2>Postavke televizora</h2>
+            <p>Imate dva daljinska upravljača za televizor:</p>
+            <ul>
+                <li><strong>Lijevi daljinski:</strong> upravlja TV-om i prikazuje njemačke i engleske kanale.</li>
+                <li><strong>Desni daljinski:</strong> upravlja prijamnikom za hrvatske i slovenske kanale.</li>
+            </ul>
+            <p><strong>Kako prebaciti na hrvatske i slovenske kanale:</strong></p>
+            <ol>
+                <li>Pritisnite tipku na <strong>lijevom daljinskom</strong> koja je označena <span class="important">crvenim okvirom</span>.</li>
+                <li>Odaberite <strong>'hdmi2'</strong> kao izvor signala.</li>
+                <li>Uključite prijamnik pomoću <strong>desnog daljinskog</strong>.</li>
+            </ol>
+            <img src="TVremotes.png" alt="Upute za daljinske upravljače">
+        </section>
+
+        <!-- Hot Water -->
+        <section id="hot-water">
+            <h2>Topla voda</h2>
+            <p>Za toplu vodu bojler mora biti uključen. Provjerite da je svjetlo prekidača <strong>UKLJUČENO</strong> kao što je prikazano ispod.</p>
+            <img src="boilerLight.png" alt="Svjetlo bojlera">
+        </section>
+
+        <!-- Garbage / Recycling -->
+        <section id="garbage">
+            <h2>Sortiranje otpada</h2>
+            <p>Molimo vas da reciklirate i razvrstate otpad u odgovarajuće spremnike:</p>
+            <ul>
+                <li>🟦 <strong>Plavi spremnik:</strong> papir i karton</li>
+                <li>🟩 <strong>Mali zeleni spremnik:</strong> staklo</li>
+                <li>🟨 <strong>Žuti spremnik:</strong> plastika i metal</li>
+                <li>🟢 <strong>Veliki zeleni spremnik:</strong> miješani i organski otpad</li>
+            </ul>
+            <img src="trashSorting.jpg" alt="Vodič za razvrstavanje otpada">
+        </section>
+
+        <!-- Nearby Beaches -->
+        <section id="beaches">
+            <h2>Obližnje plaže</h2>
+            <p>Istražite prekrasne plaže u blizini apartmana. Obično možete pronaći besplatan parking u blizini.</p>
+            <img src="nearbyBeaches.png" alt="Obližnje plaže">
+        </section>
+
+        <!-- Restaurants -->
+        <section id="restaurants">
+            <h2>Preporuke restorana</h2>
+            <p>Tražite dobar obrok? Evo naših preporuka lokalnih restorana.</p>
+            <img src="nearbyRestaurants.png" alt="Obližnji restorani">
+        </section>
+
+    </div>
+</body>
+</html>
