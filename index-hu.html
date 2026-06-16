@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Apartman Anja - Vendéginformáció</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            background-color: #f9f9f9;
+            color: #333;
+        }
+        header {
+            background-color: #2c3e50;
+            color: white;
+            text-align: center;
+            padding: 2rem 1rem;
+        }
+        h1 { margin: 0 0 1rem 0; }
+        .lang-selector {
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+            flex-wrap: wrap;
+            margin-top: 15px;
+        }
+        .lang-link {
+            display: inline-block;
+            transition: transform 0.2s;
+        }
+        .lang-link:hover {
+            transform: scale(1.1);
+        }
+        .flag-icon {
+            width: 50px; /* Big flags */
+            height: auto;
+            border-radius: 4px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.3);
+        }
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 1rem;
+        }
+        section {
+            background: white;
+            margin-bottom: 1.5rem;
+            padding: 1.5rem;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+        h2 { color: #2c3e50; border-bottom: 2px solid #ecf0f1; padding-bottom: 0.5rem; }
+        img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 4px;
+            margin: 1rem 0;
+            border: 1px solid #ddd;
+        }
+        .contact-highlight {
+            background-color: #e8f4f8;
+            padding: 1rem;
+            border-left: 4px solid #3498db;
+            margin: 1rem 0;
+        }
+        .important { font-weight: bold; color: #e74c3c; }
+        ul, ol { margin-top: 0; }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Apartman Anja</h1>
+        <!-- Nyelvválasztás zászlókkal -->
+        <div class="lang-selector">
+            <a href="index.html" class="lang-link"><img src="flag-en.png" alt="Angol" class="flag-icon"></a>
+            <a href="index-de.html" class="lang-link"><img src="flag-de.png" alt="Német" class="flag-icon"></a>
+            <a href="index-it.html" class="lang-link"><img src="flag-it.png" alt="Olasz" class="flag-icon"></a>
+            <a href="index-hr.html" class="lang-link"><img src="flag-hr.png" alt="Horvát" class="flag-icon"></a>
+            <a href="index-si.html" class="lang-link"><img src="flag-pl.png" alt="Lengyel" class="flag-icon"></a>
+            <a href="index-cz.html" class="lang-link"><img src="flag-cz.png" alt="Cseh" class="flag-icon"></a>
+            <a href="index-hu.html" class="lang-link"><img src="flag_hu.png" alt="Magyar" class="flag-icon"></a>
+        </div>
+    </header>
+
+    <div class="container">
+        
+        <!-- Házirend -->
+        <section id="house-rules">
+            <h2>Házirend</h2>
+            <p>Üdvözlünk! Reméljük, hogy élvezni fogod az Apartman Anjában töltött tartózkodásodat. Kérjük, tartsd be a szokásos be- és kijelentkezési időket.</p>
+            <ul>
+                <li><strong>Bejelentkezés:</strong> 14:00-tól</li>
+                <li><strong>Kijelentkezés:</strong> 10:00-ig</li>
+            </ul>
+        </section>
+
+        <!-- Dokumentumok -->
+        <section id="documents">
+            <h2>Vendégregisztráció (Dokumentumok)</h2>
+            <p>Törvényi előírás miatt minden vendéget regisztrálnunk kell. Küldhetsz éles fotókat a dokumentumokról, VAGY egyszerűen írd meg az alábbi adatokat minden vendégről:</p>
+            <ul>
+                <li>Teljes név</li>
+                <li>Születési dátum</li>
+                <li>Születési hely</li>
+                <li>Okmány típusa (személyi igazolvány, útlevél, jogosítvány)</li>
+                <li>Okmányszám</li>
+            </ul>
+            <div class="contact-highlight">
+                <p>Kérjük, küldd el ezeket az adatokat üzenetben  
+                  <a href="https://www.facebook.com/janja.keglevic.3">Janja Keglević</a>  
+                  Facebookon vagy Viberen: <strong>+385 95 858 2031</strong>.
+                </p>
+            </div>
+        </section>
+
+        <!-- Útmutató -->
+        <section id="directions">
+            <h2>Megközelítés</h2>
+            <p><strong>Cím:</strong> Fratrici 64e</p>
+            <p>Használd az alábbi térképet, hogy megtaláld az apartmant.</p>
+            
+            <div class="map-container">
+                <iframe
+                    src="https://maps.google.com/maps?q=45.46136,13.5429503&z=17&output=embed"
+                    width="100%"
+                    height="400"
+                    style="border:0;"
+                    allowfullscreen=""
+                    loading="lazy">
+                </iframe>
+            </div>
+            <img src="howtogetthere.png" alt="Térképes útmutató">
+        </section>
+
+        <!-- Parkolás -->
+        <section id="parking">
+            <h2>Parkolás</h2>
+            <p>A vendégek biztonságosan parkolhatnak a lenti képen jelölt területen.</p>
+            <img src="apartmentinfo.jpg" alt="Parkolóhely">
+        </section>
+
+        <!-- Terasz -->
+        <section id="terrace">
+            <h2>Terasz</h2>
+            <p>Az alábbi képen látható terület a ti kijelölt teraszrészetek. Nyugodtan használhatjátok pihenésre.</p>
+            <img src="hallwayDoorandTerrace.png" alt="Vendégterasz">
+        </section>
+
+        <!-- Bejárati ajtó -->
+        <section id="entrance">
+            <h2>Bejárati ajtó</h2>
+            <p>Az Apartman Anjába a bejárat a folyosó <strong>jobb oldalán</strong> található.</p>
+            <img src="entranceDoor.png" alt="Bejárati ajtó">
+        </section>
+
+        <!-- Kulcsok -->
+        <section id="keys">
+            <h2>Kulcsok</h2>
+            <p>A kulcsok rendszere nagyon egyszerű: érkezéskor a kulcsokat az ajtóban találod.</p>
+            <img src="keys.png" alt="Kulcsok az ajtóban">
+        </section>
+
+        <!-- Légkondicionáló -->
+        <section id="ac">
+            <h2>Légkondicionáló</h2>
+            <p>A hűtéshez kérjük, győződj meg róla, hogy a <strong>hópehely ikon</strong> látható a távirányítón.</p>
+            <img src="acRemote.png" alt="Légkondi távirányító hópehely ikonnal">
+        </section>
+
+        <!-- TV -->
+        <section id="tv">
+            <h2>TV beállítások</h2>
+            <p>Két távirányító áll rendelkezésre:</p>
+            <ul>
+                <li><strong>Bal távirányító:</strong> A TV-t vezérli, német és angol csatornákkal.</li>
+                <li><strong>Jobb távirányító:</strong> A horvát és szlovén csatornák vevőegységét vezérli.</li>
+            </ul>
+            <p><strong>Horvát és szlovén csatornák elérése:</strong></p>
+            <ol>
+                <li>Nyomd meg a <strong>bal távirányítón</strong> a <span class="important">piros keretes</span> gombot.</li>
+                <li>Válaszd az <strong>'hdmi2'</strong> bemenetet.</li>
+                <li>Kapcsold be a vevőegységet a <strong>jobb távirányítóval</strong>.</li>
+            </ol>
+            <img src="TVremotes.png" alt="TV távirányítók">
+        </section>
+
+        <!-- Meleg víz -->
+        <section id="hot-water">
+            <h2>Meleg víz</h2>
+            <p>A meleg vízhez a bojlert be kell kapcsolni. Kérjük, ellenőrizd, hogy a kapcsoló lámpája <strong>BE van kapcsolva</strong>.</p>
+            <img src="boilerLight.png" alt="Bojler kapcsoló">
+        </section>
+
+        <!-- Hulladék -->
+        <section id="garbage">
+            <h2>Szemétválogatás</h2>
+            <p>Kérjük, segíts a szelektív hulladékgyűjtésben:</p>
+            <ul>
+                <li>🟦 <strong>Kék kuka:</strong> Papír és karton</li>
+                <li>🟩 <strong>Kis zöld kuka:</strong> Üveg</li>
+                <li>🟨 <strong>Sárga kuka:</strong> Műanyag és fém</li>
+                <li>🟢 <strong>Nagy zöld kuka:</strong> Vegyes és szerves hulladék</li>
+            </ul>
+            <img src="trashSorting.jpg" alt="Szemétválogatás útmutató">
+        </section>
+
+        <!-- Strandok -->
+        <section id="beaches">
+            <h2>Közeli strandok</h2>
+            <p>Fedezd fel a közeli gyönyörű strandokat. Általában ingyenes parkolás is található a közelükben.</p>
+            <img src="nearbyBeaches.png" alt="Közeli strandok">
+        </section>
+
+        <!-- Éttermek -->
+        <section id="restaurants">
+            <h2>Éttermek ajánlása</h2>
+            <p>Finom ételt keresel? Íme néhány ajánlott helyi étterem.</p>
+            <img src="nearbyRestaurants.png" alt="Közeli éttermek">
+        </section>
+
+    </div>
+</body>
+</html>
