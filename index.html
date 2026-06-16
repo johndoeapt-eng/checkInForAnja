@@ -23,17 +23,22 @@
         .lang-selector {
             display: flex;
             justify-content: center;
-            gap: 10px;
+            gap: 15px;
             flex-wrap: wrap;
+            margin-top: 15px;
         }
-        .lang-btn {
-            background: #ecf0f1;
-            border: none;
-            padding: 8px 12px;
+        .lang-link {
+            display: inline-block;
+            transition: transform 0.2s;
+        }
+        .lang-link:hover {
+            transform: scale(1.1);
+        }
+        .flag-icon {
+            width: 50px; /* Big flags */
+            height: auto;
             border-radius: 4px;
-            cursor: pointer;
-            font-weight: bold;
-            color: #2c3e50;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.3);
         }
         .container {
             max-width: 800px;
@@ -62,22 +67,22 @@
             margin: 1rem 0;
         }
         .important { font-weight: bold; color: #e74c3c; }
-        ul { margin-top: 0; }
+        ul, ol { margin-top: 0; }
     </style>
 </head>
 <body>
 
     <header>
         <h1>Apartman Anja</h1>
-        <!-- Language Selection -->
+        <!-- Language Selection Flags -->
         <div class="lang-selector">
-            <button class="lang-btn">English</button>
-            <button class="lang-btn">Deutsch</button>
-            <button class="lang-btn">Italiano</button>
-            <button class="lang-btn">Hrvatski</button>
-            <button class="lang-btn">Slovenščina</button>
-            <button class="lang-btn">Čeština</button>
-            <button class="lang-btn">Magyar</button> <!-- Hungarian added -->
+            <a href="index.html" class="lang-link"><img src="flag-en.png" alt="English" class="flag-icon"></a>
+            <a href="index-de.html" class="lang-link"><img src="flag-de.png" alt="Deutsch" class="flag-icon"></a>
+            <a href="index-it.html" class="lang-link"><img src="flag-it.png" alt="Italiano" class="flag-icon"></a>
+            <a href="index-hr.html" class="lang-link"><img src="flag-hr.png" alt="Hrvatski" class="flag-icon"></a>
+            <a href="index-si.html" class="lang-link"><img src="flag-si.png" alt="Slovenščina" class="flag-icon"></a>
+            <a href="index-cz.html" class="lang-link"><img src="flag-cz.png" alt="Čeština" class="flag-icon"></a>
+            <a href="index-hu.html" class="lang-link"><img src="flag-hu.png" alt="Magyar" class="flag-icon"></a>
         </div>
     </header>
 
@@ -135,6 +140,7 @@
         <section id="entrance">
             <h2>Entrance Door</h2>
             <p>To enter Apartman Anja, the entrance door is located on the <strong>right side</strong> of the hallway.</p>
+            <img src="entranceDoor.png" alt="Apartment Entrance Door">
         </section>
 
         <!-- Keys -->
