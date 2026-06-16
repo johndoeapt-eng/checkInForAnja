@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Apartman Anja - Informace pro hosty</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            background-color: #f9f9f9;
+            color: #333;
+        }
+        header {
+            background-color: #2c3e50;
+            color: white;
+            text-align: center;
+            padding: 2rem 1rem;
+        }
+        h1 { margin: 0 0 1rem 0; }
+        .lang-selector {
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+            flex-wrap: wrap;
+            margin-top: 15px;
+        }
+        .lang-link {
+            display: inline-block;
+            transition: transform 0.2s;
+        }
+        .lang-link:hover {
+            transform: scale(1.1);
+        }
+        .flag-icon {
+            width: 50px; /* Big flags */
+            height: auto;
+            border-radius: 4px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.3);
+        }
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 1rem;
+        }
+        section {
+            background: white;
+            margin-bottom: 1.5rem;
+            padding: 1.5rem;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+        h2 { color: #2c3e50; border-bottom: 2px solid #ecf0f1; padding-bottom: 0.5rem; }
+        img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 4px;
+            margin: 1rem 0;
+            border: 1px solid #ddd;
+        }
+        .contact-highlight {
+            background-color: #e8f4f8;
+            padding: 1rem;
+            border-left: 4px solid #3498db;
+            margin: 1rem 0;
+        }
+        .important { font-weight: bold; color: #e74c3c; }
+        ul, ol { margin-top: 0; }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Apartman Anja</h1>
+        <!-- Výběr jazyka -->
+        <div class="lang-selector">
+            <a href="index.html" class="lang-link"><img src="flag-en.png" alt="Angličtina" class="flag-icon"></a>
+            <a href="index-de.html" class="lang-link"><img src="flag-de.png" alt="Němčina" class="flag-icon"></a>
+            <a href="index-it.html" class="lang-link"><img src="flag-it.png" alt="Italština" class="flag-icon"></a>
+            <a href="index-hr.html" class="lang-link"><img src="flag-hr.png" alt="Chorvatština" class="flag-icon"></a>
+            <a href="index-si.html" class="lang-link"><img src="flag-pl.png" alt="Polština" class="flag-icon"></a>
+            <a href="index-cz.html" class="lang-link"><img src="flag-cz.png" alt="Čeština" class="flag-icon"></a>
+            <a href="index-hu.html" class="lang-link"><img src="flag_hu.png" alt="Maďarština" class="flag-icon"></a>
+        </div>
+    </header>
+
+    <div class="container">
+        
+        <!-- Pravidla domu -->
+        <section id="house-rules">
+            <h2>Pravidla ubytování</h2>
+            <p>Vítejte! Doufáme, že si pobyt v Apartman Anja užijete. Prosíme, dodržujte standardní časy příjezdu a odjezdu.</p>
+            <ul>
+                <li><strong>Příjezd:</strong> od 14:00</li>
+                <li><strong>Odjezd:</strong> do 10:00</li>
+            </ul>
+        </section>
+
+        <!-- Dokumenty -->
+        <section id="documents">
+            <h2>Registrace hostů (doklady)</h2>
+            <p>Ze zákona jsme povinni registrovat všechny hosty. Můžete nám buď poslat jasné fotografie vašich dokladů, NEBO jednoduše napsat následující údaje pro každého hosta:</p>
+            <ul>
+                <li>Celé jméno</li>
+                <li>Datum narození</li>
+                <li>Místo narození</li>
+                <li>Typ dokladu (OP, pas, řidičský průkaz)</li>
+                <li>Číslo dokladu</li>
+            </ul>
+            <div class="contact-highlight">
+                <p>Prosíme, zašlete tyto informace zprávou na 
+                  <a href="https://www.facebook.com/janja.keglevic.3">Janja Keglević</a> 
+                  přes Facebook nebo Viber na číslo: <strong>+385 95 858 2031</strong>.
+                </p>
+            </div>
+        </section>
+
+        <!-- Jak se tam dostat -->
+        <section id="directions">
+            <h2>Jak se tam dostat</h2>
+            <p><strong>Adresa:</strong> Fratrici 64e</p>
+            <p>Použijte interaktivní mapu níže pro nalezení apartmánu.</p>
+            
+            <div class="map-container">
+                <iframe
+                    src="https://maps.google.com/maps?q=45.46136,13.5429503&z=17&output=embed"
+                    width="100%"
+                    height="400"
+                    style="border:0;"
+                    allowfullscreen=""
+                    loading="lazy">
+                </iframe>
+            </div>
+            <img src="howtogetthere.png" alt="Návod k cestě na mapě">
+        </section>
+
+        <!-- Parkování -->
+        <section id="parking">
+            <h2>Parkování</h2>
+            <p>Hosté mohou bezpečně parkovat svá vozidla na vyhrazeném místě zobrazeném na obrázku níže.</p>
+            <img src="apartmentinfo.jpg" alt="Vyhrazené parkovací místo">
+        </section>
+
+        <!-- Terasa -->
+        <section id="terrace">
+            <h2>Vaše terasa</h2>
+            <p>Prostor zobrazený níže je vaše vyhrazená část terasy. Užijte si odpočinek!</p>
+            <img src="hallwayDoorandTerrace.png" alt="Prostor terasy pro hosty">
+        </section>
+
+        <!-- Vstupní dveře -->
+        <section id="entrance">
+            <h2>Vstupní dveře</h2>
+            <p>Do Apartman Anja se vstupuje dveřmi na <strong>pravé straně</strong> chodby.</p>
+            <img src="entranceDoor.png" alt="Vstupní dveře do apartmánu">
+        </section>
+
+        <!-- Klíče -->
+        <section id="keys">
+            <h2>Klíče od apartmánu</h2>
+            <p>Systém klíčů je velmi jednoduchý: klíče na vás budou čekat přímo ve dveřích při příjezdu.</p>
+            <img src="keys.png" alt="Klíče ve dveřích">
+        </section>
+
+        <!-- Klimatizace -->
+        <section id="ac">
+            <h2>Klimatizace</h2>
+            <p>Pro chlazení klimatizací se ujistěte, že je na displeji ovladače zobrazen symbol <strong>sněhové vločky</strong>.</p>
+            <img src="acRemote.png" alt="Ovladač klimatizace se symbolem sněhové vločky">
+        </section>
+
+        <!-- Televize -->
+        <section id="tv">
+            <h2>Nastavení televize</h2>
+            <p>K dispozici máte dva ovladače:</p>
+            <ul>
+                <li><strong>Levý ovladač:</strong> ovládá TV a zobrazuje německé a anglické kanály.</li>
+                <li><strong>Pravý ovladač:</strong> ovládá přijímač pro chorvatské a slovinské kanály.</li>
+            </ul>
+            <p><strong>Jak přepnout na chorvatské a slovinské kanály:</strong></p>
+            <ol>
+                <li>Stiskněte tlačítko na <strong>levém ovladači</strong> označené červeným rámečkem.</li>
+                <li>Zvolte <strong>'hdmi2'</strong> jako zdroj signálu.</li>
+                <li>Zapněte přijímač pomocí <strong>pravého ovladače</strong>.</li>
+            </ol>
+            <img src="TVremotes.png" alt="Průvodce ovladači TV">
+        </section>
+
+        <!-- Teplá voda -->
+        <section id="hot-water">
+            <h2>Teplá voda</h2>
+            <p>Pro teplou vodu musí být zapnutý bojler. Ujistěte se, že kontrolka je <strong>ZAPNUTÁ</strong>.</p>
+            <img src="boilerLight.png" alt="Kontrolka bojleru">
+        </section>
+
+        <!-- Odpad / třídění -->
+        <section id="garbage">
+            <h2>Třídění odpadu</h2>
+            <p>Pomozte nám recyklovat tříděním odpadu do správných kontejnerů:</p>
+            <ul>
+                <li>🟦 <strong>Modrý kontejner:</strong> papír a karton</li>
+                <li>🟩 <strong>Malý zelený kontejner:</strong> sklo</li>
+                <li>🟨 <strong>Žlutý kontejner:</strong> plast a kov</li>
+                <li>🟢 <strong>Velký zelený kontejner:</strong> směsný a biologický odpad</li>
+            </ul>
+            <img src="trashSorting.jpg" alt="Průvodce tříděním odpadu">
+        </section>
+
+        <!-- Pláže v okolí -->
+        <section id="beaches">
+            <h2>Pláže v okolí</h2>
+            <p>Objevte krásné pláže v okolí apartmánu. Obvykle lze najít bezplatné parkování poblíž.</p>
+            <img src="nearbyBeaches.png" alt="Pláže v okolí">
+        </section>
+
+        <!-- Restaurace -->
+        <section id="restaurants">
+            <h2>Doporučené restaurace</h2>
+            <p>Hledáte dobré jídlo? Zde jsou naše doporučené místní restaurace.</p>
+            <img src="nearbyRestaurants.png" alt="Doporučené restaurace">
+        </section>
+
+    </div>
+</body>
+</html>
