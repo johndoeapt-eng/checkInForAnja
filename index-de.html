@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Apartman Anja - Gästeinfo</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            background-color: #f9f9f9;
+            color: #333;
+        }
+        header {
+            background-color: #2c3e50;
+            color: white;
+            text-align: center;
+            padding: 2rem 1rem;
+        }
+        h1 { margin: 0 0 1rem 0; }
+        .lang-selector {
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+            flex-wrap: wrap;
+            margin-top: 15px;
+        }
+        .lang-link {
+            display: inline-block;
+            transition: transform 0.2s;
+        }
+        .lang-link:hover {
+            transform: scale(1.1);
+        }
+        .flag-icon {
+            width: 50px; /* Big flags */
+            height: auto;
+            border-radius: 4px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.3);
+        }
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 1rem;
+        }
+        section {
+            background: white;
+            margin-bottom: 1.5rem;
+            padding: 1.5rem;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+        h2 { color: #2c3e50; border-bottom: 2px solid #ecf0f1; padding-bottom: 0.5rem; }
+        img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 4px;
+            margin: 1rem 0;
+            border: 1px solid #ddd;
+        }
+        .contact-highlight {
+            background-color: #e8f4f8;
+            padding: 1rem;
+            border-left: 4px solid #3498db;
+            margin: 1rem 0;
+        }
+        .important { font-weight: bold; color: #e74c3c; }
+        ul, ol { margin-top: 0; }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Apartman Anja</h1>
+        <!-- Language Selection Flags -->
+        <div class="lang-selector">
+            <a href="index.html" class="lang-link"><img src="flag-en.png" alt="English" class="flag-icon"></a>
+            <a href="index-de.html" class="lang-link"><img src="flag-de.png" alt="Deutsch" class="flag-icon"></a>
+            <a href="index-it.html" class="lang-link"><img src="flag-it.png" alt="Italiano" class="flag-icon"></a>
+            <a href="index-hr.html" class="lang-link"><img src="flag-hr.png" alt="Hrvatski" class="flag-icon"></a>
+            <a href="index-si.html" class="lang-link"><img src="flag-si.png" alt="Slovenščina" class="flag-icon"></a>
+            <a href="index-cz.html" class="lang-link"><img src="flag-cz.png" alt="Čeština" class="flag-icon"></a>
+            <a href="index-hu.html" class="lang-link"><img src="flag-hu.png" alt="Magyar" class="flag-icon"></a>
+        </div>
+    </header>
+
+    <div class="container">
+        
+        <!-- House Rules -->
+        <section id="house-rules">
+            <h2>Hausregeln</h2>
+            <p>Herzlich willkommen! Wir hoffen, Sie genießen Ihren Aufenthalt im Apartman Anja. Bitte beachten Sie unsere Standardzeiten für An- und Abreise.</p>
+            <ul>
+                <li><strong>Check-in:</strong> [Zeit hier einfügen]</li>
+                <li><strong>Check-out:</strong> [Zeit hier einfügen]</li>
+            </ul>
+        </section>
+
+        <!-- Documents -->
+        <section id="documents">
+            <h2>Gästeregistrierung (Dokumente)</h2>
+            <p>Gesetzlich sind wir verpflichtet, alle Gäste zu registrieren. Sie können uns entweder deutliche Fotos Ihrer Ausweisdokumente senden, ODER einfach die folgenden Daten für jeden Gast aufschreiben:</p>
+            <ul>
+                <li>Vollständiger Name</li>
+                <li>Geburtsdatum</li>
+                <li>Geburtsort</li>
+                <li>Art des Dokuments (Personalausweis, Reisepass, Führerschein)</li>
+                <li>Dokumentennummer</li>
+            </ul>
+            <div class="contact-highlight">
+                <p>Bitte senden Sie diese Informationen in einer Nachricht an <strong>Janja Keglević</strong> über Facebook oder Viber unter: <strong>[Nummer hier einfügen]</strong>.</p>
+            </div>
+        </section>
+
+        <!-- How to Get There -->
+        <section id="directions">
+            <h2>Anreise</h2>
+            <p><strong>Adresse:</strong> Fratrici 64e</p>
+            <p>Nutzen Sie die interaktive Karte unten, um den Weg zum Apartment zu finden.</p>
+            <img src="howtogetthere.png" alt="Interaktive Karte">
+        </section>
+
+        <!-- Parking -->
+        <section id="parking">
+            <h2>Parkplatz</h2>
+            <p>Gäste können ihre Fahrzeuge sicher auf dem dafür vorgesehenen Parkplatz abstellen, der auf dem Bild unten markiert ist.</p>
+            <img src="apartmentinfo.png" alt="Ausgewiesener Parkplatz">
+        </section>
+
+        <!-- Terrace -->
+        <section id="terrace">
+            <h2>Ihre Terrasse</h2>
+            <p>Der unten abgebildete Bereich ist Ihr privater Teil der Terrasse. Fühlen Sie sich frei zu entspannen und zu genießen!</p>
+            <img src="hallwayDoorandTerrace.png" alt="Terrassenbereich für Gäste">
+        </section>
+
+        <!-- Entrance Door -->
+        <section id="entrance">
+            <h2>Eingangstür</h2>
+            <p>Um das Apartman Anja zu betreten, nehmen Sie bitte die Eingangstür auf der <strong>rechten Seite</strong> des Flurs.</p>
+            <img src="entranceDoor.png" alt="Eingangstür des Apartments">
+        </section>
+
+        <!-- Keys -->
+        <section id="keys">
+            <h2>Wohnungsschlüssel</h2>
+            <p>Unser Schlüsselsystem ist sehr einfach: Die Schlüssel stecken bei Ihrer Ankunft bereits für Sie in der Tür.</p>
+            <img src="keys.png" alt="Wohnungsschlüssel in der Tür">
+        </section>
+
+        <!-- Air Conditioning -->
+        <section id="ac">
+            <h2>Klimaanlage</h2>
+            <p>Um die Klimaanlage zum Kühlen zu nutzen, stellen Sie bitte sicher, dass das <strong>Schneeflocken-Symbol</strong> auf dem Display der Fernbedienung angezeigt wird.</p>
+            <img src="acRemote.png" alt="Klimaanlagen-Fernbedienung mit Schneeflocken-Symbol">
+        </section>
+
+        <!-- TV Remotes -->
+        <section id="tv">
+            <h2>Fernsehereinstellungen</h2>
+            <p>Sie haben zwei Fernbedienungen für den Fernseher:</p>
+            <ul>
+                <li><strong>Linke Fernbedienung:</strong> Steuert den Fernseher und zeigt verschiedene deutsche und englische Sender.</li>
+                <li><strong>Rechte Fernbedienung:</strong> Steuert den Receiver für kroatische und slowenische Sender.</li>
+            </ul>
+            <p><strong>So wechseln Sie zu kroatischen & slowenischen Sendern:</strong></p>
+            <ol>
+                <li>Drücken Sie die Taste auf der <strong>linken Fernbedienung</strong>, die <span class="important">rot umrandet</span> ist.</li>
+                <li>Wählen Sie <strong>'hdmi2'</strong> als Verbindungsquelle (Input).</li>
+                <li>Schalten Sie den Receiver mit der <strong>rechten Fernbedienung</strong> ein.</li>
+            </ol>
+            <img src="TVremotes.png" alt="Anleitung TV-Fernbedienungen">
+        </section>
+
+        <!-- Hot Water -->
+        <section id="hot-water">
+            <h2>Warmwasser</h2>
+            <p>Für Warmwasser muss der Boiler eingeschaltet sein. Bitte stellen Sie sicher, dass das Licht des Schalters <strong>LEUCHTET</strong>, wie unten abgebildet.</p>
+            <img src="boilerLight.png" alt="Schalter für den Boiler">
+        </section>
+
+        <!-- Garbage / Recycling -->
+        <section id="garbage">
+            <h2>Mülltrennung</h2>
+            <p>Bitte helfen Sie uns beim Recycling, indem Sie Ihren Müll in die richtigen Tonnen sortieren:</p>
+            <ul>
+                <li>🟦 <strong>Blaue Tonne:</strong> Papier und Karton</li>
+                <li>🟩 <strong>Kleine grüne Tonne:</strong> Glas</li>
+                <li>🟨 <strong>Gelbe Tonne:</strong> Plastik und Metall</li>
+                <li>🟢 <strong>Große grüne Tonne:</strong> Restmüll und Biomüll (gemischt)</li>
+            </ul>
+            <img src="trashSorting.png" alt="Anleitung zur Mülltrennung">
+        </section>
+
+        <!-- Nearby Beaches -->
+        <section id="beaches">
+            <h2>Strände in der Nähe</h2>
+            <p>Erkunden Sie die wunderschönen Strände in der Nähe des Apartments. Meistens findet sich in der Nähe auch ein kostenloser Parkplatz.</p>
+            <img src="nearbyBeaches.png" alt="Strände in der Nähe">
+        </section>
+
+        <!-- Restaurants -->
+        <section id="restaurants">
+            <h2>Restaurantempfehlungen</h2>
+            <p>Auf der Suche nach einem guten Essen? Hier sind einige unserer lokalen Restaurantempfehlungen für Sie.</p>
+            <img src="nearbyRestaurants.png" alt="Restaurantempfehlungen in der Nähe">
+        </section>
+
+    </div>
+</body>
+</html>
