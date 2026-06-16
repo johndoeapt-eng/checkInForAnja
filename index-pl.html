@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Apartman Anja - Informacje dla gości</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            background-color: #f9f9f9;
+            color: #333;
+        }
+        header {
+            background-color: #2c3e50;
+            color: white;
+            text-align: center;
+            padding: 2rem 1rem;
+        }
+        h1 { margin: 0 0 1rem 0; }
+        .lang-selector {
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+            flex-wrap: wrap;
+            margin-top: 15px;
+        }
+        .lang-link {
+            display: inline-block;
+            transition: transform 0.2s;
+        }
+        .lang-link:hover {
+            transform: scale(1.1);
+        }
+        .flag-icon {
+            width: 50px; /* Big flags */
+            height: auto;
+            border-radius: 4px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.3);
+        }
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 1rem;
+        }
+        section {
+            background: white;
+            margin-bottom: 1.5rem;
+            padding: 1.5rem;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+        h2 { color: #2c3e50; border-bottom: 2px solid #ecf0f1; padding-bottom: 0.5rem; }
+        img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 4px;
+            margin: 1rem 0;
+            border: 1px solid #ddd;
+        }
+        .contact-highlight {
+            background-color: #e8f4f8;
+            padding: 1rem;
+            border-left: 4px solid #3498db;
+            margin: 1rem 0;
+        }
+        .important { font-weight: bold; color: #e74c3c; }
+        ul, ol { margin-top: 0; }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Apartman Anja</h1>
+        <!-- Language Selection Flags -->
+        <div class="lang-selector">
+            <a href="index.html" class="lang-link"><img src="flag-en.png" alt="Angielski" class="flag-icon"></a>
+            <a href="index-de.html" class="lang-link"><img src="flag-de.png" alt="Niemiecki" class="flag-icon"></a>
+            <a href="index-it.html" class="lang-link"><img src="flag-it.png" alt="Włoski" class="flag-icon"></a>
+            <a href="index-hr.html" class="lang-link"><img src="flag-hr.png" alt="Chorwacki" class="flag-icon"></a>
+            <a href="index-si.html" class="lang-link"><img src="flag-pl.png" alt="Polski" class="flag-icon"></a>
+            <a href="index-cz.html" class="lang-link"><img src="flag-cz.png" alt="Czeski" class="flag-icon"></a>
+            <a href="index-hu.html" class="lang-link"><img src="flag_hu.png" alt="Węgierski" class="flag-icon"></a>
+        </div>
+    </header>
+
+    <div class="container">
+        
+        <!-- House Rules -->
+        <section id="house-rules">
+            <h2>Zasady pobytu</h2>
+            <p>Witamy! Mamy nadzieję, że pobyt w Apartman Anja będzie udany. Prosimy o przestrzeganie standardowych godzin zameldowania i wymeldowania.</p>
+            <ul>
+                <li><strong>Zameldowanie:</strong> od 14:00</li>
+                <li><strong>Wymeldowanie:</strong> do 10:00</li>
+            </ul>
+        </section>
+
+        <!-- Documents -->
+        <section id="documents">
+            <h2>Rejestracja gości (dokumenty)</h2>
+            <p>Zgodnie z prawem musimy zarejestrować wszystkich gości. Możesz przesłać nam wyraźne zdjęcia dokumentów LUB po prostu podać następujące dane dla każdego gościa:</p>
+            <ul>
+                <li>Imię i nazwisko</li>
+                <li>Data urodzenia</li>
+                <li>Miejsce urodzenia</li>
+                <li>Rodzaj dokumentu (dowód osobisty, paszport, prawo jazdy)</li>
+                <li>Numer dokumentu</li>
+            </ul>
+            <div class="contact-highlight">
+                <p>Prosimy o przesłanie tych informacji w wiadomości do 
+                  <a href="https://www.facebook.com/janja.keglevic.3">Janja Keglević</a> 
+                  przez Facebook lub Viber na numer: <strong>+385 95 858 2031</strong>.
+                </p>
+            </div>
+        </section>
+
+        <!-- How to Get There -->
+        <section id="directions">
+            <h2>Jak dojechać</h2>
+            <p><strong>Adres:</strong> Fratrici 64e</p>
+            <p>Skorzystaj z poniższej interaktywnej mapy, aby dotrzeć do apartamentu.</p>
+            
+            <div class="map-container">
+                <iframe
+                    src="https://maps.google.com/maps?q=45.46136,13.5429503&z=17&output=embed"
+                    width="100%"
+                    height="400"
+                    style="border:0;"
+                    allowfullscreen=""
+                    loading="lazy">
+                </iframe>
+            </div>
+            <img src="howtogetthere.png" alt="Instrukcje mapy">
+        </section>
+
+        <!-- Parking -->
+        <section id="parking">
+            <h2>Parking</h2>
+            <p>Goście mogą bezpiecznie parkować swoje pojazdy w wyznaczonym miejscu pokazanym na poniższym zdjęciu.</p>
+            <img src="apartmentinfo.jpg" alt="Wyznaczone miejsce parkingowe">
+        </section>
+
+        <!-- Terrace -->
+        <section id="terrace">
+            <h2>Twój taras</h2>
+            <p>Przestrzeń pokazana poniżej to Twój wyznaczony taras. Zapraszamy do relaksu i odpoczynku!</p>
+            <img src="hallwayDoorandTerrace.png" alt="Strefa tarasu dla gości">
+        </section>
+
+        <!-- Entrance Door -->
+        <section id="entrance">
+            <h2>Drzwi wejściowe</h2>
+            <p>Aby wejść do Apartman Anja, drzwi wejściowe znajdują się po <strong>prawej stronie</strong> korytarza.</p>
+            <img src="entranceDoor.png" alt="Drzwi wejściowe apartamentu">
+        </section>
+
+        <!-- Keys -->
+        <section id="keys">
+            <h2>Klucze do apartamentu</h2>
+            <p>Nasz system kluczy jest bardzo prosty: klucze będą na Ciebie czekać w drzwiach po przyjeździe.</p>
+            <img src="keys.png" alt="Klucze w drzwiach apartamentu">
+        </section>
+
+        <!-- Air Conditioning -->
+        <section id="ac">
+            <h2>Klimatyzacja</h2>
+            <p>Aby używać klimatyzacji do chłodzenia, upewnij się, że na pilocie widoczna jest <strong>ikona płatka śniegu</strong>.</p>
+            <img src="acRemote.png" alt="Pilot klimatyzacji z ikoną płatka śniegu">
+        </section>
+
+        <!-- TV Remotes -->
+        <section id="tv">
+            <h2>Ustawienia telewizora</h2>
+            <p>Masz dwa piloty do telewizora:</p>
+            <ul>
+                <li><strong>Lewy pilot:</strong> obsługuje telewizor i kanały niemieckie oraz angielskie.</li>
+                <li><strong>Prawy pilot:</strong> obsługuje dekoder dla kanałów chorwackich i słoweńskich.</li>
+            </ul>
+            <p><strong>Jak przełączyć się na kanały chorwackie i słoweńskie:</strong></p>
+            <ol>
+                <li>Naciśnij przycisk na <strong>lewym pilocie</strong> oznaczony <span class="important">czerwoną ramką</span>.</li>
+                <li>Wybierz <strong>'hdmi2'</strong> jako źródło sygnału.</li>
+                <li>Włącz dekoder za pomocą <strong>prawego pilota</strong>.</li>
+            </ol>
+            <img src="TVremotes.png" alt="Instrukcja pilotów TV">
+        </section>
+
+        <!-- Hot Water -->
+        <section id="hot-water">
+            <h2>Ciepła woda</h2>
+            <p>Aby mieć ciepłą wodę, bojler musi być włączony. Upewnij się, że lampka przełącznika jest <strong>włączona</strong>, jak pokazano poniżej.</p>
+            <img src="boilerLight.png" alt="Lampka włącznika bojlera">
+        </section>
+
+        <!-- Garbage / Recycling -->
+        <section id="garbage">
+            <h2>Segregacja śmieci</h2>
+            <p>Pomóż nam w recyklingu, sortując śmieci do odpowiednich pojemników:</p>
+            <ul>
+                <li>🟦 <strong>Niebieski pojemnik:</strong> papier i karton</li>
+                <li>🟩 <strong>Mały zielony pojemnik:</strong> szkło</li>
+                <li>🟨 <strong>Żółty pojemnik:</strong> plastik i metal</li>
+                <li>🟢 <strong>Duży zielony pojemnik:</strong> odpady zmieszane i organiczne</li>
+            </ul>
+            <img src="trashSorting.jpg" alt="Przewodnik segregacji śmieci">
+        </section>
+
+        <!-- Nearby Beaches -->
+        <section id="beaches">
+            <h2>Plaże w pobliżu</h2>
+            <p>Odkryj piękne plaże w pobliżu apartamentu. Zwykle można znaleźć darmowy parking w ich okolicy.</p>
+            <img src="nearbyBeaches.png" alt="Plaże w pobliżu">
+        </section>
+
+        <!-- Restaurants -->
+        <section id="restaurants">
+            <h2>Rekomendacje restauracji</h2>
+            <p>Szukasz dobrego posiłku? Oto nasze najlepsze lokalne rekomendacje restauracji.</p>
+            <img src="nearbyRestaurants.png" alt="Restauracje w pobliżu">
+        </section>
+
+    </div>
+</body>
+</html>
