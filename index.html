@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Apartman Anja - Guest Info</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            background-color: #f9f9f9;
+            color: #333;
+        }
+        header {
+            background-color: #2c3e50;
+            color: white;
+            text-align: center;
+            padding: 2rem 1rem;
+        }
+        h1 { margin: 0 0 1rem 0; }
+        .lang-selector {
+            display: flex;
+            justify-content: center;
+            gap: 10px;
+            flex-wrap: wrap;
+        }
+        .lang-btn {
+            background: #ecf0f1;
+            border: none;
+            padding: 8px 12px;
+            border-radius: 4px;
+            cursor: pointer;
+            font-weight: bold;
+            color: #2c3e50;
+        }
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 1rem;
+        }
+        section {
+            background: white;
+            margin-bottom: 1.5rem;
+            padding: 1.5rem;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+        h2 { color: #2c3e50; border-bottom: 2px solid #ecf0f1; padding-bottom: 0.5rem; }
+        img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 4px;
+            margin: 1rem 0;
+            border: 1px solid #ddd;
+        }
+        .contact-highlight {
+            background-color: #e8f4f8;
+            padding: 1rem;
+            border-left: 4px solid #3498db;
+            margin: 1rem 0;
+        }
+        .important { font-weight: bold; color: #e74c3c; }
+        ul { margin-top: 0; }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Apartman Anja</h1>
+        <!-- Language Selection -->
+        <div class="lang-selector">
+            <button class="lang-btn">English</button>
+            <button class="lang-btn">Deutsch</button>
+            <button class="lang-btn">Italiano</button>
+            <button class="lang-btn">Hrvatski</button>
+            <button class="lang-btn">Slovenščina</button>
+            <button class="lang-btn">Čeština</button>
+            <button class="lang-btn">Magyar</button> <!-- Hungarian added -->
+        </div>
+    </header>
+
+    <div class="container">
+        
+        <!-- House Rules -->
+        <section id="house-rules">
+            <h2>House Rules</h2>
+            <p>Welcome! We hope you enjoy your stay at Apartman Anja. Please observe our standard check-in and check-out times.</p>
+            <ul>
+                <li><strong>Check-in:</strong> [Insert Standard Time]</li>
+                <li><strong>Check-out:</strong> [Insert Standard Time]</li>
+            </ul>
+        </section>
+
+        <!-- Documents -->
+        <section id="documents">
+            <h2>Guest Registration (Documents)</h2>
+            <p>By law, we are required to register all guests. You can either send us clear photos of your documents, OR simply write out the following details for each guest:</p>
+            <ul>
+                <li>Full Name</li>
+                <li>Date of Birth</li>
+                <li>Place of Birth</li>
+                <li>Type of Document (ID, Passport, Driver's Licence)</li>
+                <li>Document Number</li>
+            </ul>
+            <div class="contact-highlight">
+                <p>Please send this information in a message to <strong>Janja Keglević</strong> via Facebook or Viber at: <strong>[Insert Number Here]</strong>.</p>
+            </div>
+        </section>
+
+        <!-- How to Get There -->
+        <section id="directions">
+            <h2>How to Get There</h2>
+            <p><strong>Address:</strong> Fratrici 64e</p>
+            <p>Use the interactive map below to find your way to the apartment.</p>
+            <img src="howtogetthere.png" alt="Interactive Map Directions">
+        </section>
+
+        <!-- Parking -->
+        <section id="parking">
+            <h2>Parking</h2>
+            <p>Guests can park their vehicles safely in the designated area shown in the image below.</p>
+            <img src="apartmentinfo.png" alt="Designated Parking Area">
+        </section>
+
+        <!-- Terrace -->
+        <section id="terrace">
+            <h2>Your Terrace</h2>
+            <p>The space pictured below is your designated part of the terrace. Feel free to relax and enjoy!</p>
+            <img src="hallwayDoorandTerrace.png" alt="Guest Terrace Area">
+        </section>
+
+        <!-- Entrance Door -->
+        <section id="entrance">
+            <h2>Entrance Door</h2>
+            <p>To enter Apartman Anja, the entrance door is located on the <strong>right side</strong> of the hallway.</p>
+        </section>
+
+        <!-- Keys -->
+        <section id="keys">
+            <h2>Apartment Keys</h2>
+            <p>Our key system is very simple: the keys will be waiting for you right in the door upon your arrival.</p>
+            <img src="keys.png" alt="Apartment Keys in the Door">
+        </section>
+
+        <!-- Air Conditioning -->
+        <section id="ac">
+            <h2>Air Conditioning</h2>
+            <p>To use the AC for cooling, please ensure that the <strong>snowflake icon</strong> is displayed on the remote screen.</p>
+            <img src="acRemote.png" alt="AC Remote showing snowflake icon">
+        </section>
+
+        <!-- TV Remotes -->
+        <section id="tv">
+            <h2>Television Settings</h2>
+            <p>You have two remotes for the TV setup:</p>
+            <ul>
+                <li><strong>Left Remote:</strong> Controls the TV and displays various German and English channels.</li>
+                <li><strong>Right Remote:</strong> Controls the receiver for Croatian and Slovenian channels.</li>
+            </ul>
+            <p><strong>How to switch to Croatian & Slovenian channels:</strong></p>
+            <ol>
+                <li>Press the button on the <strong>left remote</strong> that has a <span class="important">red box</span> around it.</li>
+                <li>Choose <strong>'hdmi2'</strong> as the connection type.</li>
+                <li>Turn on the receiver using the <strong>right remote</strong>.</li>
+            </ol>
+            <img src="TVremotes.png" alt="TV Remotes Guide">
+        </section>
+
+        <!-- Hot Water -->
+        <section id="hot-water">
+            <h2>Hot Water</h2>
+            <p>For hot water, the boiler must be turned on. Please ensure the switch light is <strong>ON</strong> as shown below.</p>
+            <img src="boilerLight.png" alt="Boiler Switch Light">
+        </section>
+
+        <!-- Garbage / Recycling -->
+        <section id="garbage">
+            <h2>Trash Sorting</h2>
+            <p>Please help us recycle by sorting your garbage into the correct bins:</p>
+            <ul>
+                <li>🟦 <strong>Blue Bin:</strong> Paper and carton</li>
+                <li>🟩 <strong>Smaller Green Bin:</strong> Glass</li>
+                <li>🟨 <strong>Yellow Bin:</strong> Plastic and metal</li>
+                <li>🟢 <strong>Big Green Bin:</strong> Mixed and organic trash</li>
+            </ul>
+            <img src="trashSorting.png" alt="Garbage Sorting Guide">
+        </section>
+
+        <!-- Nearby Beaches -->
+        <section id="beaches">
+            <h2>Nearby Beaches</h2>
+            <p>Explore the beautiful beaches near the apartment. You can usually find free parking somewhere near them.</p>
+            <img src="nearbyBeaches.png" alt="Nearby Beaches">
+        </section>
+
+        <!-- Restaurants -->
+        <section id="restaurants">
+            <h2>Restaurant Recommendations</h2>
+            <p>Looking for a great meal? Here are some of our top local restaurant recommendations.</p>
+            <img src="nearbyRestaurants.png" alt="Nearby Restaurants">
+        </section>
+
+    </div>
+</body>
+</html>
